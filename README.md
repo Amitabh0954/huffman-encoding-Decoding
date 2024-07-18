@@ -30,23 +30,28 @@ For decompression:
 
 g++ decode.cpp huffman.cpp -o decode
 
-##How to Use
-Compression
+## How to Use
+### Compression:
+
 To compress a file, run the following command:
 ./encode <input_file> <output_file>
+
 Replace <input_file> with the name of the file you want to compress and <output_file> with the desired name for the compressed file.
+
 Example:
+
 ./encode input.txt output.huff
-Decompression
+
+### Decompression
 To decompress a file, run the following command:
 ./decode <encoded_file> <output_file>
 Replace <encoded_file> with the name of the Huffman encoded file and <output_file> with the desired name for the decompressed file.
 Example:
 ./decode output.huff decoded.txt
 
-##Example:
+## Example:
 Given an inputFile.txt file of size 2117 KB, the compressed output.huff file is 1120 KB, demonstrating a significant reduction in file size.
 
-#Acknowledgements
+# Acknowledgements
 Based on the Huffman coding algorithm for data compression.
 Developed as a learning project for understanding data compression techniques.
